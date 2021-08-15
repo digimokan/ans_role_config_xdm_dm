@@ -19,6 +19,7 @@ Configure the XDM display manager.
 
 * Install and configure the [XDM](https://www.xfree86.org/current/xdm.1.html)
   [display manager](https://wiki.archlinux.org/index.php/Display_manager).
+* Start desktop session for one user.
 
 ## Supported Operating Systems
 
@@ -57,9 +58,13 @@ Configure the XDM display manager.
 
 ## Role Options
 
-See the role `defaults` file, for overridable vars:
+Define these _required_ vars for the role:
 
-  * [defaults/main.yml](../defaults/main.yml)
+  * `user_name`: user name to start a desktop session for
+  * `session`: desktop session to start
+
+_NOTE:_ See /usr/share/xsessions/ for session names - "mate", "i3", "xfce",
+etc)
 
 ## Role Dependencies
 
