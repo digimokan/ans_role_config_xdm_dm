@@ -1,0 +1,5 @@
+- name: "Check user-selected session '{{ session }}' is in supported list"
+  ansible.builtin.fail:
+    msg: "This role does not yet support starting a {{ session }} desktop session"
+  when: session != 'mate'
+

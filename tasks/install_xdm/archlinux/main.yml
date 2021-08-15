@@ -1,0 +1,7 @@
+- name: "Install the 'xdm-archlinux' application package"
+  community.general.pacman:
+    name: xdm-archlinux
+    state: present
+  become: true
+  become_user: root
+
