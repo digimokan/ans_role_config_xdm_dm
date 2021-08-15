@@ -12,7 +12,6 @@ Configure the XDM display manager.
 * [Quick Start](#quick-start)
     * [Use From Playbook](#use-from-playbook)
 * [Role Options](#role-options)
-* [Role Dependencies](#role-dependencies)
 * [Contributing](#contributing)
 
 ## Purpose
@@ -63,13 +62,7 @@ Define these _required_ vars for the role:
   * `user_name`: user name to start a desktop session for
   * `session`: desktop session to start
 
-_NOTE:_ See /usr/share/xsessions/ for session names - "mate", "i3", "xfce",
-etc)
-
-## Role Dependencies
-
-* [ans_role_add_group](https://github.com/digimokan/ans_role_add_group)
-* [ans_role_add_user](https://github.com/digimokan/ans_role_add_user)
+_NOTE:_ See list of [supported desktop sessions](../check_session_name/main.yml)
 
 ## Contributing
 
