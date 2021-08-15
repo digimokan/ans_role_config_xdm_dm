@@ -62,7 +62,7 @@ Define these _required_ vars for the role:
   * `user_name`: user name to start a desktop session for
   * `session`: desktop session to start
 
-_NOTE:_ See list of [supported desktop sessions](../check_session_name/main.yml)
+_NOTE:_ See list of [supported desktop sessions](../tasks/check_session_name/main.yml)
 
 ## Contributing
 
