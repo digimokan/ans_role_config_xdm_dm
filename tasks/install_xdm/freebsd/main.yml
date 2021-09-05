@@ -1,0 +1,7 @@
+- name: "Install the 'xdm' application package"
+  ansible.builtin.package:
+    name: xdm
+    state: present
+  become: true
+  become_user: root
+
