@@ -1,0 +1,11 @@
+- name: "Uninstall other DM packages: {{ packages_to_uninstall }}"
+  ansible.builtin.package:
+    name: "{{ packages_to_uninstall }}"
+    state: absent
+  vars:
+    packages_to_uninstall:
+      - ly
+      - lightdm
+  become: true
+  become_user: root
+

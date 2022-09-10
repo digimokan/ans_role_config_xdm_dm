@@ -1,0 +1,6 @@
+- name: "Uninstall other DMs"
+  ansible.builtin.include_tasks: uninstall.yml
+
+- name: "Unconfigure other DMs"
+  ansible.builtin.include_tasks: unconfigure.yml
+

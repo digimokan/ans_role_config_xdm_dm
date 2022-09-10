@@ -1,0 +1,3 @@
+# path to main Linux Xresources file for XDM
+linux_xdm_xresources_file_path: "/etc/X11/xdm/Xresources"
+

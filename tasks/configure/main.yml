@@ -10,17 +10,8 @@
 
 - name: "Enable xdm display manager to start at boot"
   ansible.builtin.service:
-    name: xdm-archlinux
-    enabled: yes
-  become: true
-  become_user: root
-  when: ansible_os_family == "Archlinux"
-
-- name: "Enable xdm display manager to start at boot"
-  ansible.builtin.service:
     name: xdm
     enabled: yes
   become: true
   become_user: root
-  when: ansible_os_family == "FreeBSD"
 

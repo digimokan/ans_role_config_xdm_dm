@@ -1,0 +1,12 @@
+# path to main FreeBSD Xresources file for XDM
+freebsd_xdm_xresources_file_path: "/usr/local/etc/X11/xdm/Xresources"
+
+# config file for system-wide terminal configuration
+freebsd_terminal_config_path: '/etc/gettytab'
+
+# config file for system-wide console configuration
+freebsd_console_config_path: '/etc/ttys'
+
+# virtual console tty to run Ly on
+freebsd_ly_virtual_console_num: '1'
+
