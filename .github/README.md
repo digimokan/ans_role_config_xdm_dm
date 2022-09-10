@@ -68,6 +68,7 @@ See the role `defaults` files for main role vars listings:
 Define these _required_ vars for the role:
 
   * `xdm_user_name`: user name to start the XDM display manager for
+  * `session`: cmd to start DE/WM, and descriptive name
 
 ## Contributing
 
