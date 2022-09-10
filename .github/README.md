@@ -61,12 +61,13 @@ Install and configure the XDM display manager.
 
 ## Role Options
 
+See the role `defaults` files for main role vars listings:
+
+  * [defaults](../defaults/main/)
+
 Define these _required_ vars for the role:
 
   * `xdm_user_name`: user name to start the XDM display manager for
-  * `session`: desktop session to start
-
-_NOTE:_ See list of [supported desktop sessions](../tasks/check_session_name/main.yml)
 
 ## Contributing
 

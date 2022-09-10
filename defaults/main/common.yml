@@ -1,3 +1,7 @@
+# specify cmd to start DE/WM, and give it a name for XDM to show on screen
+# NOTE: the default values here will drop user into console terminal
+session: { cmd: '', name: 'console terminal' }
+
 # uninstall and unconfigure other (non-XDM) display managers
 remove_other_display_managers: true
 
