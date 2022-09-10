@@ -1,6 +1,6 @@
 # ans_role_config_xdm_dm
 
-Configure the XDM display manager.
+Install and configure the XDM display manager.
 
 [![Release](https://img.shields.io/github/release/digimokan/ans_role_config_xdm_dm.svg?label=release)](https://github.com/digimokan/ans_role_config_xdm_dm/releases/latest "Latest Release Notes")
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?label=license)](LICENSE.md "Project License")
@@ -22,6 +22,7 @@ Configure the XDM display manager.
 
 ## Supported Operating Systems
 
+* Ubuntu bionic (18.04), focal (20.04), jammy (22.04)
 * Arch Linux.
 * FreeBSD.
 
@@ -51,7 +52,7 @@ Configure the XDM display manager.
    - hosts: localhost
      connection: local
      tasks:
-       - name: "Configure the XDM display manager"
+       - name: "Install and configure the XDM display manager"
          ansible.builtin.include_role:
            name: ans_role_config_xdm_dm
    ```

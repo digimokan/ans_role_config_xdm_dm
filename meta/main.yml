@@ -1,9 +1,14 @@
 galaxy_info:
   author: digimokan
-  description: "Configure the XDM display manager"
+  description: "Install and configure the XDM display manager"
   license: "MIT"
   min_ansible_version: 2.3
   platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+        - jammy
     - name: Archlinux
       versions:
         - all
