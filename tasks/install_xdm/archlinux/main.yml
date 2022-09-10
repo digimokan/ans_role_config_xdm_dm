@@ -1,6 +1,6 @@
-- name: "Install the 'xdm-archlinux' application package"
-  community.general.pacman:
-    name: xdm-archlinux
+- name: "Install the 'xorg-xdm' application package"
+  ansible.builtin.package:
+    name: xorg-xdm
     state: present
   become: true
   become_user: root
