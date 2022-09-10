@@ -1,9 +1,9 @@
-- name: "Configure '{{ session }}' desktop session for user '{{ user_name }}'"
+- name: "Configure '{{ session }}' desktop session for user '{{ xdm_user_name }}'"
   ansible.builtin.template:
-    dest: "/home/{{ user_name }}/.xsession"
+    dest: "/home/{{ xdm_user_name }}/.xsession"
     src: "{{ session }}.j2"
-    owner: "{{ user_name }}"
-    group: "{{ user_name }}"
+    owner: "{{ xdm_user_name }}"
+    group: "{{ xdm_user_name }}"
     mode: '700'
     force: yes
   become: true

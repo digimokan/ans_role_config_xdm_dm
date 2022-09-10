@@ -55,13 +55,15 @@ Install and configure the XDM display manager.
        - name: "Install and configure the XDM display manager"
          ansible.builtin.include_role:
            name: ans_role_config_xdm_dm
+         vars:
+           xdm_user_name: "user2"
    ```
 
 ## Role Options
 
 Define these _required_ vars for the role:
 
-  * `user_name`: user name to start a desktop session for
+  * `xdm_user_name`: user name to start the XDM display manager for
   * `session`: desktop session to start
 
 _NOTE:_ See list of [supported desktop sessions](../tasks/check_session_name/main.yml)
