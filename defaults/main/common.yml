@@ -7,3 +7,9 @@
 # uninstall and unconfigure other (non-XDM) display managers
 remove_other_display_managers: true
 
+# login screen colors
+login_screen_bg_color:              '#2E3440'
+login_screen_ui_text_color:         '#D8DEE9'
+login_screen_user_input_text_color: '#3B4252'
+login_screen_error_text_color:      '#BF616A'
+

@@ -1,0 +1,26 @@
+! vim: set filetype=xdefaults:
+! ANSIBLE-MANAGED CONFIGURATION FILE
+
+! GENERAL OPTIONS
+
+xlogin.Login.allowRootLogin: false
+xlogin.Login.echoPasswd: true
+xlogin.Login.fail: Authorization Failed
+xlogin.Login.greeting: Log In To Start i3wm
+xlogin.Login.namePrompt: User Name
+xlogin.Login.passwdPrompt: Password
+
+! THEME
+
+xroot.background: {{ login_screen_bg_color }}
+xlogin.Login.background: {{ login_screen_bg_color }}
+xlogin.Login.foreground: {{ login_screen_ui_text_color }}
+xlogin.Login.failColor: {{ login_screen_error_text_color }}
+xlogin.Login.greetColor: {{ login_screen_ui_text_color }}
+xlogin.Login.inpColor: {{ login_screen_user_input_text_color }}
+xlogin.Login.promptColor: {{ login_screen_ui_text_color }}
+xlogin.Login.face: Serif-24:bold
+xlogin.Login.failFace: Serif-18
+xlogin.Login.greetFace: Serif-14
+xlogin.Login.promptFace: Serif-14
+

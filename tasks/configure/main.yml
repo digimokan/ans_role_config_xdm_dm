@@ -8,6 +8,16 @@
   become: true
   become_user: root
 
+- name: "Configure login screen appearance in '{{ system_xresources_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ system_xresources_file_path }}"
+    src: "Xresources.j2"
+    owner: 'root'
+    mode: '644'
+    force: yes
+  become: true
+  become_user: root
+
 - name: "Enable xdm display manager to start at boot"
   ansible.builtin.service:
     name: xdm
