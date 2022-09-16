@@ -3,6 +3,9 @@
 # shellcheck disable=code
 # ANSIBLE-MANAGED CONFIGURATION FILE
 
+# kill utilities started by Xsetup
+pkill xclock
+
 # start the DE or WM
 {{ session.cmd }}
 
