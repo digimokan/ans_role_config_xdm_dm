@@ -25,17 +25,16 @@ xlogin.Login.inpColor:    {{ login_screen_user_input_text_color }}
 xlogin.Login.greetFace:  Serif-32:bold
 xlogin.Login.promptFace: Serif-22:italic
 xlogin.Login.failFace:   Serif-22:italic
-xlogin.Login.face:       Monospace-20
+xlogin.Login.face:       Monospace-22
 
 ! CLOCK PRINT-OUT
 
-xclock*background:       {{ login_screen_bg_color }}
-xclock*foreground:       {{ login_screen_ui_text_color }}
-xclock*borderWidth:      0
-xclock*font:             Monospace-20
-xClock*strftime:         %a %d %b %H:%M:%S
+xclock.Clock.background: {{ login_screen_bg_color }}
+xclock.Clock.foreground: {{ login_screen_ui_text_color }}
+xclock.Clock.font:       Monospace-20
+xclock.Clock.strftime:   %a %d %b %H:%M:%S
 xclock.Clock.analog:     false
 xclock.Clock.chime:      false
 xclock.Clock.render:     false
-xclock.Clock.update:     5
+xclock.Clock.update:     1
 
