@@ -5,3 +5,10 @@
   become: true
   become_user: root
 
+- name: "Install supporting 'xclock' package"
+  ansible.builtin.package:
+    name: xclock
+    state: present
+  become: true
+  become_user: root
+
