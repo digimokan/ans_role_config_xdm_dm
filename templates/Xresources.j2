@@ -10,19 +10,25 @@ xlogin.Login.greeting: Log In To Start i3wm
 xlogin.Login.namePrompt: User Name
 xlogin.Login.passwdPrompt: Password
 
-! THEME
+! TEXT CURSOR
 
 Xcursor.theme: redglass
-Xcursor.size: 32
-xroot.background: {{ login_screen_bg_color }}
-xlogin.Login.background: {{ login_screen_bg_color }}
-xlogin.Login.foreground: {{ login_screen_ui_text_color }}
-xlogin.Login.failColor: {{ login_screen_error_text_color }}
-xlogin.Login.greetColor: {{ login_screen_ui_text_color }}
-xlogin.Login.inpColor: {{ login_screen_user_input_text_color }}
+Xcursor.size:  32
+
+! COLORS
+
+xroot.background:         {{ login_screen_bg_color }}
+xlogin.Login.background:  {{ login_screen_bg_color }}
+xlogin.Login.foreground:  {{ login_screen_ui_text_color }}
+xlogin.Login.greetColor:  {{ login_screen_ui_text_color }}
 xlogin.Login.promptColor: {{ login_screen_ui_text_color }}
-xlogin.Login.face: Serif-20
-xlogin.Login.failFace: Serif-22:bold
-xlogin.Login.greetFace: Serif-28:bold
+xlogin.Login.failColor:   {{ login_screen_error_text_color }}
+xlogin.Login.inpColor:    {{ login_screen_user_input_text_color }}
+
+! FONTS
+
+xlogin.Login.greetFace:  Serif-32:bold
 xlogin.Login.promptFace: Serif-22:bold
+xlogin.Login.failFace:   Serif-22:bold
+xlogin.Login.face:       Monospace-20
 
