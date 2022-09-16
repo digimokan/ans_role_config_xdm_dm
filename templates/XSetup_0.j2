@@ -1,0 +1,13 @@
+#!/bin/sh
+# vim: set filetype=sh:
+# shellcheck disable=code
+# ANSIBLE-MANAGED CONFIGURATION FILE
+# Purpose: start background utilities for xdm to use and display
+# NOTE: the utilities are configured in Xresources
+
+# start the xclock, to show the date and time
+#   geometry:
+#     +X/-X offset from left/right screen edge
+#     +Y/-Y offset from top/bottom screen edge
+xclock -geometry -5+5 &
+
