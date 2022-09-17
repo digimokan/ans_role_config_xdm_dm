@@ -9,7 +9,11 @@
 #   +Y for offset from top screen edge
 #   -Y for offset from bottom screen edge
 
-# start the xclock, to show the date and time
+# use xserver xsetroot utility to set main bg color
+xsetroot \
+  -solid "{{ main_bg_color }}"
+
+# start the xclock app, to show the date and time
 #   strftime: see format description in standard unix man page
 #   digital: print time as text (i.e. not a wall clock graphic)
 #   update: update the time every XXXX seconds
@@ -20,10 +24,7 @@ xclock \
   -update 1 \
   &
 
-# use xserver xsetroot utility to set main bg color
-xsetroot \
-  -solid "{{ main_bg_color }}"
-
+# start the buttons xmessage app, to show reboot/poweroff buttons
 {{ system_xdm_buttons_file_path }} \
   -geometry +0+0 \
   &

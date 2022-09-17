@@ -5,6 +5,13 @@
   become: true
   become_user: root
 
+- name: "Install supporting 'xsetroot' package"
+  ansible.builtin.package:
+    name: xsetroot
+    state: present
+  become: true
+  become_user: root
+
 - name: "Install supporting 'xclock' package"
   ansible.builtin.package:
     name: xclock
@@ -12,9 +19,9 @@
   become: true
   become_user: root
 
-- name: "Install supporting 'xsetroot' package"
+- name: "Install supporting 'xmessage' package (for showing buttons)"
   ansible.builtin.package:
-    name: xsetroot
+    name: xmessage
     state: present
   become: true
   become_user: root
