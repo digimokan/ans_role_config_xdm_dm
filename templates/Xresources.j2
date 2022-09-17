@@ -1,8 +1,11 @@
 ! vim: set filetype=xdefaults:
 ! ANSIBLE-MANAGED CONFIGURATION FILE
 
-! MENU TITLES, LABELS, AND INPUTS
+! KEYBINDINGS
+xlogin*login.translations: #override \
+  <Key>Tab: set-session-argument() finish-field()
 
+! MENU TITLES, LABELS, AND INPUTS
 xlogin.Login.fail:           Authorization Failed
 xlogin.Login.greeting:       Log In To Start i3wm
 xlogin.Login.namePrompt:     User Name:
@@ -11,7 +14,6 @@ xlogin.Login.allowRootLogin: false
 xlogin.Login.echoPasswd:     true
 
 ! COLORS AND FONTS
-
 xlogin.Login.background:  {{ login_window_bg_color }}
 xlogin.Login.foreground:  {{ login_window_ui_text_color }}
 xlogin.Login.greetColor:  {{ login_window_ui_text_color }}
@@ -24,7 +26,6 @@ xlogin.Login.failFace:    Serif-22:italic
 xlogin.Login.face:        Monospace-22
 
 ! APPS LAUNCHED BY XSETUP
-
 xclock.Clock.background:  {{ main_bg_color }}
 xclock.Clock.foreground:  {{ main_text_color }}
 xclock*borderWidth:       0
