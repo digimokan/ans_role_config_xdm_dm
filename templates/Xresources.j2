@@ -1,19 +1,16 @@
 ! vim: set filetype=xdefaults:
 ! ANSIBLE-MANAGED CONFIGURATION FILE
 
-! GENERAL OPTIONS
-
-xlogin.Login.allowRootLogin: false
-xlogin.Login.echoPasswd:     true
-
-! MENU TITLES AND LABELS
+! MENU TITLES, LABELS, AND INPUTS
 
 xlogin.Login.fail:           Authorization Failed
 xlogin.Login.greeting:       Log In To Start i3wm
 xlogin.Login.namePrompt:     User Name:
 xlogin.Login.passwdPrompt:   Password:
+xlogin.Login.allowRootLogin: false
+xlogin.Login.echoPasswd:     true
 
-! COLORS
+! COLORS AND FONTS
 
 xlogin.Login.background:  {{ login_window_bg_color }}
 xlogin.Login.foreground:  {{ login_window_ui_text_color }}
@@ -21,17 +18,19 @@ xlogin.Login.greetColor:  {{ login_window_ui_text_color }}
 xlogin.Login.promptColor: {{ login_window_ui_text_color }}
 xlogin.Login.failColor:   {{ login_window_error_text_color }}
 xlogin.Login.inpColor:    {{ login_window_user_input_text_color }}
+xlogin.Login.greetFace:   Serif-32:bold
+xlogin.Login.promptFace:  Serif-22:italic
+xlogin.Login.failFace:    Serif-22:italic
+xlogin.Login.face:        Monospace-22
 
-! FONTS
-
-xlogin.Login.greetFace:  Serif-32:bold
-xlogin.Login.promptFace: Serif-22:italic
-xlogin.Login.failFace:   Serif-22:italic
-xlogin.Login.face:       Monospace-22
-
-! CLOCK PRINT-OUT
+! APPS LAUNCHED BY XSETUP
 
 xclock.Clock.background:  {{ main_bg_color }}
 xclock.Clock.foreground:  {{ main_text_color }}
 xclock.Clock.borderWidth: 0
+xmessage*background:      {{ main_bg_color }}
+xmessage*foreground:      {{ main_text_color }}
+xmessage*borderWidth:     0
+xmessage*message.scrollHorizontal: Never
+xmessage*message.scrollVertical:   Never
 
