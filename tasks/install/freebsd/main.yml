@@ -12,3 +12,10 @@
   become: true
   become_user: root
 
+- name: "Install supporting 'xsetroot' package"
+  ansible.builtin.package:
+    name: xsetroot
+    state: present
+  become: true
+  become_user: root
+

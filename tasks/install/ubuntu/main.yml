@@ -12,3 +12,10 @@
   become: true
   become_user: root
 
+- name: "Install supporting 'x11-xserver-utils' package (for xsetroot)"
+  ansible.builtin.package:
+    name: x11-xserver-utils
+    state: present
+  become: true
+  become_user: root
+
