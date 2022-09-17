@@ -4,6 +4,9 @@ freebsd_xdm_xresources_file_path: "/usr/local/etc/X11/xdm/Xresources"
 # path to FreeBSD XSetup utilities-startup file for XDM (starts on console 0)
 freebsd_xdm_xsetup_file_path: "/usr/local/etc/X11/xdm/Xsetup_0"
 
+# path to main FreeBSD Xstartup file for XDM
+freebsd_xdm_xstartup_file_path: "/usr/local/etc/X11/xdm/Xstartup"
+
 # path to FreeBSD buttons script for XDM
 freebsd_xdm_buttons_file_path: "/usr/local/etc/X11/xdm/buttons.sh"
 

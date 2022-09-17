@@ -1,0 +1,10 @@
+- name: "Configure '{{ session.name }}' desktop session for user '{{ xdm_user_name }}'"
+  ansible.builtin.template:
+    dest: "/home/{{ xdm_user_name }}/.xsession"
+    src: "session.j2"
+    owner: "{{ xdm_user_name }}"
+    mode: '700'
+    force: yes
+  become: true
+  become_user: root
+

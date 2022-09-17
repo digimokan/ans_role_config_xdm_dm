@@ -1,6 +1,12 @@
 - name: "Configure XDM service"
   ansible.builtin.include_tasks: service.yml
 
-- name: "Create XDM config files"
-  ansible.builtin.include_tasks: xdm_config.yml
+- name: "Configure XDM login screen"
+  ansible.builtin.include_tasks: login_screen.yml
+
+- name: "Configure XDM post-login actions"
+  ansible.builtin.include_tasks: post_login.yml
+
+- name: "Configure XDM DE/WM session start"
+  ansible.builtin.include_tasks: session.yml
 

@@ -19,7 +19,7 @@
   become: true
   become_user: root
 
-- name: "Install supporting 'x11-utils' package (for showing buttons)"
+- name: "Install supporting 'x11-utils' package (for showing buttons, stopping login screen apps)"
   ansible.builtin.package:
     name: x11-utils
     state: present

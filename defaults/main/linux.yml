@@ -4,6 +4,9 @@ linux_xdm_xresources_file_path: "/etc/X11/xdm/Xresources"
 # path to Linux XSetup utilities-startup file for XDM (starts on console 0)
 linux_xdm_xsetup_file_path: "/etc/X11/xdm/Xsetup_0"
 
+# path to main Linux Xstartup file for XDM
+linux_xdm_xstartup_file_path: "/etc/X11/xdm/Xstartup"
+
 # path to Linux buttons script for XDM
 linux_xdm_buttons_file_path: "/etc/X11/xdm/buttons.sh"
 
