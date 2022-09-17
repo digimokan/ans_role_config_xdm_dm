@@ -11,7 +11,16 @@
 #     -X for offset from right screen edge
 #     +Y for offset from top screen edge
 #     -Y for offset from bottom screen edge
-xclock -geometry -5+5 &
+#   digital: print time as text (i.e. not a wall clock graphic)
+#   update: update the time every XXXX seconds
+xclock \
+  -geometry -5+5 \
+  -strftime '%a %d %b %H:%M:%S' \
+  -digital \
+  -update 1 \
+  &
 
-xsetroot -solid "{{ main_bg_color }}"
+# use xserver xsetroot utility to set main bg color
+xsetroot \
+  -solid "{{ main_bg_color }}"
 
