@@ -6,6 +6,7 @@
     system_xdm_buttons_file_path: "{{ linux_xdm_buttons_file_path }}"
     system_shutdown_cmd: "{{ linux_shutdown_cmd }}"
     system_restart_cmd: "{{ linux_restart_cmd }}"
+    system_virt_consoles_msg: "{{ linux_virt_consoles_msg }}"
   when: ansible_system == "Linux"
 
 - name: "Run all role tasks for FreeBSD"
@@ -16,5 +17,6 @@
     system_xdm_buttons_file_path: "{{ freebsd_xdm_buttons_file_path }}"
     system_shutdown_cmd: "{{ freebsd_shutdown_cmd }}"
     system_restart_cmd: "{{ freebsd_restart_cmd }}"
+    system_virt_consoles_msg: "{{ freebsd_virt_consoles_msg }}"
   when: ansible_os_family == "FreeBSD"
 

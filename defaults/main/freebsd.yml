@@ -13,6 +13,9 @@ freebsd_shutdown_cmd: '/sbin/halt -p'
 # FreeBSD system-restart command (for buttons)
 freebsd_restart_cmd: '/sbin/reboot'
 
+# Description of available virtual consoles on FreeBSD
+freebsd_virt_consoles_msg: 'Virtual Consoles: 0 (Login, Ctl-Alt-F1) to 8 (Xorg, Ctl-Alt-F9)'
+
 # config file for system-wide terminal configuration
 freebsd_terminal_config_path: '/etc/gettytab'
 

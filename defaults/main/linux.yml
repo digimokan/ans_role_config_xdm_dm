@@ -13,3 +13,6 @@ linux_shutdown_cmd: '/usr/bin/poweroff'
 # Linux system-restart command (for buttons)
 linux_restart_cmd: '/usr/bin/reboot'
 
+# Description of available virtual consoles on Linux
+linux_virt_consoles_msg: 'Virtual Consoles: 1 (Login/Xorg, Ctl-Alt-F1) to 6 (Ctl-Alt-F6)'
+
