@@ -14,5 +14,5 @@ linux_shutdown_cmd: '/usr/bin/poweroff'
 linux_restart_cmd: '/usr/bin/reboot'
 
 # Description of available virtual consoles on Linux
-linux_virt_consoles_msg: 'Virtual Consoles: 1 (Login/Xorg, Ctl-Alt-F1) to 6 (Ctl-Alt-F6)'
+linux_virt_consoles_msg: 'Virtual Consoles: Ctl-Alt-F1 (Login/Xorg, 1) to Ctl-Alt-F6 (6)'
 
