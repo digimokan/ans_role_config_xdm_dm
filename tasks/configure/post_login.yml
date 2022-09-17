@@ -3,7 +3,9 @@
     path: "{{ system_xdm_xstartup_file_path }}"
     insertafter: >-
       ^#!/bin/sh$
-    block: "xwininfo -root -children | grep '  0x' | cut -d' ' -f6 | xargs -n1 xkill -id"
+    block: |
+      pkill xclock
+      pkill xmessage
     marker: "# {mark} ANSIBLE MANAGED BLOCK: Stop All Login Screen Apps"
     create: no
     state: present

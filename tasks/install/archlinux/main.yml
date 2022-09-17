@@ -26,12 +26,3 @@
   become: true
   become_user: root
 
-- name: "Install supporting 'xkill', 'xwininfo' packages (for stopping login screen apps)"
-  ansible.builtin.package:
-    name:
-      - xorg-xkill
-      - xorg-xwininfo
-    state: present
-  become: true
-  become_user: root
-
