@@ -18,7 +18,7 @@ xsetroot \
 #   digital: print time as text (i.e. not a wall clock graphic)
 #   update: update the time every XXXX seconds
 xclock \
-  -geometry -15+25 \
+  -geometry -5+25 \
   -strftime '%a %d %b %H:%M:%S' \
   -digital \
   -update 1 \
@@ -26,6 +26,6 @@ xclock \
 
 # start the buttons xmessage app, to show reboot/poweroff buttons
 {{ system_xdm_buttons_file_path }} \
-  -geometry +15+0 \
+  -geometry +5+0 \
   &
 
