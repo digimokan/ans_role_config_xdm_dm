@@ -7,7 +7,11 @@
 
 # start the xclock, to show the date and time
 #   geometry:
-#     +X/-X offset from left/right screen edge
-#     +Y/-Y offset from top/bottom screen edge
+#     +X for offset from left screen edge
+#     -X for offset from right screen edge
+#     +Y for offset from top screen edge
+#     -Y for offset from bottom screen edge
 xclock -geometry -5+5 &
+
+xsetroot -solid "{{ main_bg_color }}"
 
