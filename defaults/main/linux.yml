@@ -7,3 +7,9 @@ linux_xdm_xsetup_file_path: "/etc/X11/xdm/Xsetup_0"
 # path to Linux buttons script for XDM
 linux_xdm_buttons_file_path: "/etc/X11/xdm/buttons.sh"
 
+# Linux system-shutdown command (for buttons)
+linux_shutdown_cmd: '/usr/bin/poweroff'
+
+# Linux system-restart command (for buttons)
+linux_restart_cmd: '/usr/bin/reboot'
+

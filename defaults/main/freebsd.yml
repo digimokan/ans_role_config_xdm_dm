@@ -7,6 +7,12 @@ freebsd_xdm_xsetup_file_path: "/usr/local/etc/X11/xdm/Xsetup_0"
 # path to FreeBSD buttons script for XDM
 freebsd_xdm_buttons_file_path: "/usr/local/etc/X11/xdm/buttons.sh"
 
+# FreeBSD system-shutdown command (for buttons)
+freebsd_shutdown_cmd: '/sbin/halt -p'
+
+# FreeBSD system-restart command (for buttons)
+freebsd_restart_cmd: '/sbin/reboot'
+
 # config file for system-wide terminal configuration
 freebsd_terminal_config_path: '/etc/gettytab'
 

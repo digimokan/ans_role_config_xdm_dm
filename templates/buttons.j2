@@ -3,14 +3,11 @@
 # shellcheck disable=code
 # ANSIBLE-MANAGED CONFIGURATION FILE
 
-xmessage -buttons reboot,poweroff "$@" ""
+# NOTE: the "" required arg (unavoidably) prints an empty text box above buttons
+xmessage -buttons "Reboot":20,"Shutdown":21 ""
 
 case "$?" in
- 101)
-    /sbin/reboot
-    ;;
- 102)
-    /sbin/halt -p
-    ;;
+ 20) {{ system_restart_cmd }} ;;
+ 21) {{ system_shutdown_cmd }} ;;
 esac
 
