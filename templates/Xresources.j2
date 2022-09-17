@@ -12,13 +12,12 @@ xlogin.Login.passwdPrompt:   Password:
 
 ! COLORS
 
-xroot.background:         {{ login_screen_bg_color }}
-xlogin.Login.background:  {{ login_screen_bg_color }}
-xlogin.Login.foreground:  {{ login_screen_ui_text_color }}
-xlogin.Login.greetColor:  {{ login_screen_ui_text_color }}
-xlogin.Login.promptColor: {{ login_screen_ui_text_color }}
-xlogin.Login.failColor:   {{ login_screen_error_text_color }}
-xlogin.Login.inpColor:    {{ login_screen_user_input_text_color }}
+xlogin.Login.background:  {{ login_window_bg_color }}
+xlogin.Login.foreground:  {{ login_window_ui_text_color }}
+xlogin.Login.greetColor:  {{ login_window_ui_text_color }}
+xlogin.Login.promptColor: {{ login_window_ui_text_color }}
+xlogin.Login.failColor:   {{ login_window_error_text_color }}
+xlogin.Login.inpColor:    {{ login_window_user_input_text_color }}
 
 ! FONTS
 
@@ -29,8 +28,8 @@ xlogin.Login.face:       Monospace-22
 
 ! CLOCK PRINT-OUT
 
-xclock.Clock.background: {{ login_screen_bg_color }}
-xclock.Clock.foreground: {{ login_screen_ui_text_color }}
+xclock.Clock.background: {{ login_window_bg_color }}
+xclock.Clock.foreground: {{ login_window_ui_text_color }}
 xclock.Clock.font:       Monospace-20
 xclock.Clock.strftime:   %a %d %b %H:%M:%S
 xclock.Clock.analog:     false
