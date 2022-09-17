@@ -1,0 +1,7 @@
+- name: "Enable xdm display manager to start at boot"
+  ansible.builtin.service:
+    name: xdm
+    enabled: yes
+  become: true
+  become_user: root
+

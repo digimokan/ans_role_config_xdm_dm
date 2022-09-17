@@ -1,0 +1,40 @@
+- name: "Configure '{{ session.name }}' desktop session for user '{{ xdm_user_name }}'"
+  ansible.builtin.template:
+    dest: "/home/{{ xdm_user_name }}/.xsession"
+    src: "session.j2"
+    owner: "{{ xdm_user_name }}"
+    mode: '700'
+    force: yes
+  become: true
+  become_user: root
+
+- name: "Configure login screen appearance in '{{ system_xresources_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ system_xresources_file_path }}"
+    src: "Xresources.j2"
+    owner: 'root'
+    mode: '644'
+    force: yes
+  become: true
+  become_user: root
+
+- name: "Start login screen utilities in '{{ system_xdm_xsetup_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ system_xdm_xsetup_file_path }}"
+    src: "XSetup_0.j2"
+    owner: 'root'
+    mode: '555'
+    force: yes
+  become: true
+  become_user: root
+
+- name: "Create buttons script in '{{ system_xdm_buttons_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ system_xdm_buttons_file_path }}"
+    src: "buttons.j2"
+    owner: 'root'
+    mode: '555'
+    force: yes
+  become: true
+  become_user: root
+

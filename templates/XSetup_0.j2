@@ -3,13 +3,13 @@
 # shellcheck disable=code
 # ANSIBLE-MANAGED CONFIGURATION FILE
 # Purpose: start background utilities for xdm to use and display
+# X11 Window Geometry:
+#   +X for offset from left screen edge
+#   -X for offset from right screen edge
+#   +Y for offset from top screen edge
+#   -Y for offset from bottom screen edge
 
 # start the xclock, to show the date and time
-#   geometry:
-#     +X for offset from left screen edge
-#     -X for offset from right screen edge
-#     +Y for offset from top screen edge
-#     -Y for offset from bottom screen edge
 #   strftime: see format description in standard unix man page
 #   digital: print time as text (i.e. not a wall clock graphic)
 #   update: update the time every XXXX seconds
@@ -23,4 +23,8 @@ xclock \
 # use xserver xsetroot utility to set main bg color
 xsetroot \
   -solid "{{ main_bg_color }}"
+
+{{ system_xdm_buttons_file_path }} \
+  -geometry +0+0 \
+  &
 

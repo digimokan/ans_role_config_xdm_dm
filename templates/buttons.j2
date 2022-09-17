@@ -1,0 +1,16 @@
+#!/bin/sh
+# vim: set filetype=sh:
+# shellcheck disable=code
+# ANSIBLE-MANAGED CONFIGURATION FILE
+
+xmessage -buttons reboot,poweroff "$@" ""
+
+case "$?" in
+ 101)
+    /sbin/reboot
+    ;;
+ 102)
+    /sbin/halt -p
+    ;;
+esac
+
