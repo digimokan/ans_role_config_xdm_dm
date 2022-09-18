@@ -1,6 +1,6 @@
-- name: "Stop all login screen apps (started by Xsetup) in {{ system_xdm_xstartup_file_path }}"
+- name: "Stop all login screen apps (started by Xsetup) in {{ system_xdm_post_login_file_path }}"
   ansible.builtin.blockinfile:
-    path: "{{ system_xdm_xstartup_file_path }}"
+    path: "{{ system_xdm_post_login_file_path }}"
     insertafter: >-
       ^#!/bin/sh$
     block: |
