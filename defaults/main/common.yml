@@ -5,7 +5,7 @@
 # session: { cmd: 'mate-session', name: 'MATE Desktop' }
 
 # uninstall and unconfigure other (non-XDM) display managers
-remove_other_display_managers: true
+remove_other_display_managers: false
 
 # main "desktop" colors
 main_bg_color:                      '#2B2B2B'
