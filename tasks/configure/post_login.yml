@@ -7,7 +7,7 @@
       pkill xclock
       pkill xmessage
     marker: "# {mark} ANSIBLE MANAGED BLOCK: Stop All Login Screen Apps"
-    create: no
+    create: false
     state: present
   become: true
   become_user: root

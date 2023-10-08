@@ -4,7 +4,7 @@
     src: "Xresources.j2"
     owner: 'root'
     mode: '644'
-    force: yes
+    force: true
   become: true
   become_user: root
 
@@ -14,7 +14,7 @@
     src: "XSetup_0.j2"
     owner: 'root'
     mode: '555'
-    force: yes
+    force: true
   become: true
   become_user: root
 
@@ -24,7 +24,7 @@
     src: "buttons.j2"
     owner: 'root'
     mode: '555'
-    force: yes
+    force: true
   become: true
   become_user: root
 

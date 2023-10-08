@@ -14,9 +14,9 @@
     line: >-
       ttyv{{ freebsd_ly_virtual_console_num }}\2
     state: present
-    firstmatch: yes
-    backrefs: yes
-    backup: yes
+    firstmatch: true
+    backrefs: true
+    backup: true
   become: true
   become_user: root
 

@@ -4,7 +4,7 @@
     src: "session.j2"
     owner: "{{ xdm_user_name }}"
     mode: '700'
-    force: yes
+    force: true
   become: true
   become_user: root
 
