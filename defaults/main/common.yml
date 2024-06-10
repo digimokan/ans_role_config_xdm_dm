@@ -23,3 +23,8 @@ xdm_login_window_user_prompt_font:      'Serif-22:italic'
 xdm_login_window_error_text_font:       'Serif-22:italic'
 xdm_login_window_user_input_text_font:  'Sans-22'
 
+# optional extra Xresources lines for xdm to load - not passed on to Xorg
+# xdm_extra_xresources_lines:
+#   - { lines: "Xft.dpi: 192", descrip: 'set global monitor DPI' }
+xdm_extra_xresources_lines: []
+

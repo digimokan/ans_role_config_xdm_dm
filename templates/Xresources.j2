@@ -36,3 +36,9 @@ xmessage*message.scrollHorizontal: Never
 xmessage*message.scrollVertical:   Never
 xmessage*Command.shapeStyle:       rectangle
 
+! EXTRA XRESOURCES IMPORTED FROM EXTERNAL ROLES
+
+{% for resource in xdm_extra_xresources_lines %}
+{{ '! ' }}{{ resource.descrip }}
+{{ resource.lines }}
+{% endfor %}
