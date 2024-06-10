@@ -1,0 +1,11 @@
+- name: "Get file stats of user .xsession file at '{{ xdm_user_xsession_file_path }}'"
+  ansible.builtin.stat:
+    path: "{{ xdm_user_xsession_file_path }}"
+  register: user_xsession_file_stats
+
+- name: "Check user .xsession file at '{{ xdm_user_xsession_file_path }}' exists"
+  ansible.builtin.assert:
+    that: "{{ user_xsession_file_stats.stat.exists }}"
+    fail_msg: "user .xsession file not found (required by xdm)"
+    quiet: true
+

@@ -7,3 +7,6 @@
 - name: "Configure XDM post-login actions"
   ansible.builtin.include_tasks: post_login.yml
 
+- name: "Check user .xsession file is emplaced"
+  ansible.builtin.include_tasks: check_xsession.yml
+
