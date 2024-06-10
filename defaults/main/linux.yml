@@ -1,21 +1,21 @@
 # path to main Linux Xresources file for XDM
-linux_xdm_xresources_file_path: "/etc/X11/xdm/Xresources"
+xdm_linux_xdm_xresources_file_path: "/etc/X11/xdm/Xresources"
 
 # path to Linux XSetup utilities-startup file for XDM (starts on console 0)
-linux_xdm_xsetup_file_path: "/etc/X11/xdm/Xsetup_0"
+xdm_linux_xdm_xsetup_file_path: "/etc/X11/xdm/Xsetup_0"
 
 # path to Linux buttons script for XDM
-linux_xdm_buttons_file_path: "/etc/X11/xdm/buttons.sh"
+xdm_linux_xdm_buttons_file_path: "/etc/X11/xdm/buttons.sh"
 
 # path to main Linux Post-Login-Actions file for XDM
-linux_xdm_post_login_file_path: "/etc/X11/xdm/Xstartup"
+xdm_linux_xdm_post_login_file_path: "/etc/X11/xdm/Xstartup"
 
 # Linux system-shutdown command (for buttons)
-linux_shutdown_cmd: '/usr/bin/poweroff'
+xdm_linux_shutdown_cmd: '/usr/bin/poweroff'
 
 # Linux system-restart command (for buttons)
-linux_restart_cmd: '/usr/bin/reboot'
+xdm_linux_restart_cmd: '/usr/bin/reboot'
 
 # Description of available virtual consoles on Linux
-linux_virt_consoles_msg: 'Virtual Consoles: Ctl-Alt-F1 (Login/Xorg, 1) to Ctl-Alt-F6 (6)'
+xdm_linux_virt_consoles_msg: 'Virtual Consoles: Ctl-Alt-F1 (Login/Xorg, 1) to Ctl-Alt-F6 (6)'
 

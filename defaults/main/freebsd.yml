@@ -1,30 +1,30 @@
 # path to main FreeBSD Xresources file for XDM
-freebsd_xdm_xresources_file_path: "/usr/local/etc/X11/xdm/Xresources"
+xdm_freebsd_xdm_xresources_file_path: "/usr/local/etc/X11/xdm/Xresources"
 
 # path to FreeBSD XSetup utilities-startup file for XDM (starts on console 0)
-freebsd_xdm_xsetup_file_path: "/usr/local/etc/X11/xdm/Xsetup_0"
+xdm_freebsd_xdm_xsetup_file_path: "/usr/local/etc/X11/xdm/Xsetup_0"
 
 # path to FreeBSD buttons script for XDM
-freebsd_xdm_buttons_file_path: "/usr/local/etc/X11/xdm/buttons.sh"
+xdm_freebsd_xdm_buttons_file_path: "/usr/local/etc/X11/xdm/buttons.sh"
 
 # path to main FreeBSD Post-Login-Actions file for XDM
-freebsd_xdm_post_login_file_path: "/usr/local/etc/X11/xdm/GiveConsole"
+xdm_freebsd_xdm_post_login_file_path: "/usr/local/etc/X11/xdm/GiveConsole"
 
 # FreeBSD system-shutdown command (for buttons)
-freebsd_shutdown_cmd: '/sbin/halt -p'
+xdm_freebsd_shutdown_cmd: '/sbin/halt -p'
 
 # FreeBSD system-restart command (for buttons)
-freebsd_restart_cmd: '/sbin/reboot'
+xdm_freebsd_restart_cmd: '/sbin/reboot'
 
 # Description of available virtual consoles on FreeBSD
-freebsd_virt_consoles_msg: 'Virtual Consoles: Ctl-Alt-F1 (Login, 0) to Ctl-Alt-F9 (Xorg, 8)'
+xdm_freebsd_virt_consoles_msg: 'Virtual Consoles: Ctl-Alt-F1 (Login, 0) to Ctl-Alt-F9 (Xorg, 8)'
 
 # config file for system-wide terminal configuration
-freebsd_terminal_config_path: '/etc/gettytab'
+xdm_freebsd_terminal_config_path: '/etc/gettytab'
 
 # config file for system-wide console configuration
-freebsd_console_config_path: '/etc/ttys'
+xdm_freebsd_console_config_path: '/etc/ttys'
 
 # virtual console tty to run Ly on
-freebsd_ly_virtual_console_num: '1'
+xdm_freebsd_ly_virtual_console_num: '1'
 

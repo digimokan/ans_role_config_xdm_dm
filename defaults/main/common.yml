@@ -5,21 +5,21 @@
 # xdm_user_xsession_file_path: '/home/user2/.xsession'
 
 # uninstall and unconfigure other (non-XDM) display managers
-remove_other_display_managers: false
+xdm_remove_other_display_managers: false
 
 # main "desktop" colors
-main_bg_color:                      '#2B2B2B'
-main_text_color:                    '#C6C6C6'
+xdm_main_bg_color:                      '#2B2B2B'
+xdm_main_text_color:                    '#C6C6C6'
 
 # login window colors
-login_window_bg_color:              '#2E3440'
-login_window_ui_text_color:         '#D8DEE9'
-login_window_user_input_text_color: '#3B4252'
-login_window_error_text_color:      '#BF616A'
+xdm_login_window_bg_color:              '#2E3440'
+xdm_login_window_ui_text_color:         '#D8DEE9'
+xdm_login_window_user_input_text_color: '#3B4252'
+xdm_login_window_error_text_color:      '#BF616A'
 
 # font sizes
-login_window_main_title_font:       'Serif-32:bold'
-login_window_user_prompt_font:      'Serif-22:italic'
-login_window_error_text_font:       'Serif-22:italic'
-login_window_user_input_text_font:  'Sans-22'
+xdm_login_window_main_title_font:       'Serif-32:bold'
+xdm_login_window_user_prompt_font:      'Serif-22:italic'
+xdm_login_window_error_text_font:       'Serif-22:italic'
+xdm_login_window_user_input_text_font:  'Sans-22'
 

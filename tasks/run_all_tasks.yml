@@ -1,6 +1,6 @@
 - name: "Remove and unconfigure any other DMs that may be installed"
   ansible.builtin.include_tasks: remove_other_dms/main.yml
-  when: remove_other_display_managers
+  when: xdm_remove_other_display_managers
 
 - name: "Install XDM application"
   ansible.builtin.include_tasks: install/main.yml
