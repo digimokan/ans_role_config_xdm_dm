@@ -5,6 +5,6 @@
 - name: "Install XDM application"
   ansible.builtin.include_tasks: install/main.yml
 
-- name: "Configure startup of desktop session"
+- name: "Configure XDM application"
   ansible.builtin.include_tasks: configure/main.yml
 

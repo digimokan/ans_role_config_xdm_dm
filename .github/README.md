@@ -57,7 +57,6 @@ Install and configure the XDM display manager.
            name: ans_role_config_xdm_dm
          vars:
            xdm_user_name: "user2"
-           session: { cmd: 'mate-session', name: 'MATE Desktop' }
    ```
 
 ## Role Options

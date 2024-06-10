@@ -7,6 +7,3 @@
 - name: "Configure XDM post-login actions"
   ansible.builtin.include_tasks: post_login.yml
 
-- name: "Configure XDM DE/WM session start"
-  ansible.builtin.include_tasks: session.yml
-

@@ -1,9 +1,6 @@
 # REQUIRED: main xdm user
 # xdm_user_name: 'user2'
 
-# REQUIRED: specify cmd to start DE/WM, and descriptive DE/WM name
-# session: { cmd: 'mate-session', name: 'MATE Desktop' }
-
 # uninstall and unconfigure other (non-XDM) display managers
 remove_other_display_managers: false
 
