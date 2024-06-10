@@ -1,8 +1,8 @@
 # REQUIRED: main xdm user
 # xdm_user_name: 'user2'
 
-# REQUIRED: path to user .xsession file
-# xdm_user_xsession_file_path: '/home/user2/.xsession'
+# path to user .xsession file
+xdm_user_xsession_file_path: '/home/{{ xdm_user_name }}/.xsession'
 
 # uninstall and unconfigure other (non-XDM) display managers
 xdm_remove_other_display_managers: false

@@ -57,7 +57,6 @@ Install and configure the XDM display manager.
            name: ans_role_config_xdm_dm
          vars:
            xdm_user_name: "user2"
-           xdm_user_xsession_file_path: '/home/user2/.xsession'
    ```
 
 ## Role Options
@@ -69,7 +68,6 @@ See the role `defaults` files for main role vars listings:
 Define these _required_ vars for the role:
 
   * `xdm_user_name`: user name to start the XDM display manager for
-  * `xdm_user_xsession_file_path`: path to user .xsession file
 
 ## Contributing
 
