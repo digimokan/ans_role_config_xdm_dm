@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# ANSIBLE-MANAGED CONFIGURATION FILE
+# NOTES:
+#   - This file is sourced by xdm after it logs in the user.
+#   - When this script/file exits, the xdm session ends.
+# REFS:
+#   - See https://www.freebsd.org/cgi/man.cgi?query=xdm
+
+# load user shell startup scripts (because xdm does not run them on user login)
+
+# user login shell is zshell
+if [ -n "${ZSH_VERSION}" ] && [ -f "/home/{{ xdm_user_name }}/.zprofile" ]; then
+  . "/home/{{ xdm_user_name }}/.zprofile"
+# user login shell is bash
+elif [ -n "${BASH_VERSION}" ] && [ -f "/home/{{ xdm_user_name }}/.bash_profile" ]; then
+  . "/home/{{ xdm_user_name }}/.bash_profile"
+# user login shell is bourne or ksh
+elif [ -f "/home/{{ xdm_user_name }}/.profile" ]; then
+  . "/home/{{ xdm_user_name }}/.profile"
+fi
+
+# run user .xinitrc, which should perform the same actions as an .xsession file
+
+readonly user_xinitrc_script="{{ xdm_user_xinitrc_path }}"
+[ -f "${user_xinitrc_script}" ] && . "${user_xinitrc_script}"
+
+# vim: set filetype=sh:
+

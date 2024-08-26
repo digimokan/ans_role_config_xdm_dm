@@ -1,0 +1,5 @@
+# optional extra Xresources lines for xdm to load - not passed on to Xorg
+# xdm_extra_xresources_lines:
+#   - { lines: "Xft.dpi: 192", descrip: 'set global monitor DPI' }
+xdm_extra_xresources_lines: []
+

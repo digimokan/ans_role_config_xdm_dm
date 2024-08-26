@@ -1,0 +1,3 @@
+# path to user .xsession file
+xdm_user_xsession_file_path: '/home/{{ xdm_user_name }}/.xsession'
+

@@ -1,0 +1,10 @@
+- name: "Add user .xsession at '{{ xdm_user_xsession_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ xdm_user_xsession_file_path }}"
+    src: 'xsession.j2'
+    owner: "{{ xdm_user_name }}"
+    mode: '755'
+    force: true
+  become: true
+  become_user: root
+

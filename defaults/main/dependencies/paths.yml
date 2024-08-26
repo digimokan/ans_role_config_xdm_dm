@@ -1,0 +1,4 @@
+# user .xinitrc path (Run by startx, and by some DMs)
+# required to define
+# xdm_user_xinitrc_path: "/home/user2/.xinitrc"
+

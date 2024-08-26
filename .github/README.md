@@ -57,17 +57,18 @@ Install and configure the XDM display manager.
            name: ans_role_config_xdm_dm
          vars:
            xdm_user_name: "user2"
+           xdm_user_xinitrc_path: "/home/user2/.xinitrc"
    ```
 
 ## Role Options
 
-See the role `defaults` files for main role vars listings:
+Vars that must be defined when including the role in the playbook:
 
-  * [defaults](../defaults/main/)
+  * [dependencies](../defaults/main/dependencies)
 
-Define these _required_ vars for the role:
+Vars with default values, which can be overridden in the playbook:
 
-  * `xdm_user_name`: user name to start the XDM display manager for
+  * [overridable](../defaults/main/overridable)
 
 ## Contributing
 
