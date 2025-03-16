@@ -9,8 +9,10 @@ xdm_login_window_user_input_text_color: '#3B4252'
 xdm_login_window_error_text_color:      '#BF616A'
 
 # font sizes
-xdm_login_window_main_title_font:       'Serif-32:bold'
-xdm_login_window_user_prompt_font:      'Serif-22:italic'
-xdm_login_window_error_text_font:       'Serif-22:italic'
-xdm_login_window_user_input_text_font:  'Sans-22'
+xdm_login_window_main_title_font:       'Sans-48:bold'
+xdm_login_window_user_prompt_font:      'Sans-30:italic'
+xdm_login_window_error_text_font:       'Sans-30:italic'
+xdm_login_window_user_input_text_font:  'Sans-30'
+xdm_login_window_clock_font:            'Sans-30'
+xdm_login_window_buttons_font_size:     '36'
 
